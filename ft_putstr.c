@@ -6,7 +6,7 @@
 /*   By: rmerzak <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:45:58 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/24 15:49:02 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/25 21:39:57 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf_h.h"
@@ -21,4 +21,5 @@ void ft_putstr(const char *str)
 		write(1, &str[i], 1)
 			i++;
 	}
+	return (i);
 }

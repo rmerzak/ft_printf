@@ -6,13 +6,14 @@
 /*   By: rmerzak <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:14:12 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/24 17:17:48 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/25 21:41:40 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf_h.h"
 
-void	ft_printpourcentage(void)
+int	ft_printpourcentage(void)
 {
 	write(1, "%", 1);
+	return (1);
 }
