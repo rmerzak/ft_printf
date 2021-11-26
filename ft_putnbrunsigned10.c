@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbrunsigned10.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmerzak <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 16:10:33 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/25 21:40:39 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/26 21:18:20 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf_h.h"
+#include "ft_printf.h"
 
-int	ft_putnbrinsigned10(int i)
+int	ft_putnbrunsigned10(unsigned int i)
 {
 	int j;
 	long	nb;
@@ -32,8 +32,8 @@ int	ft_putnbrinsigned10(int i)
 	}
 	else
 	{
-		j +=ft_putnbrinsigned10(nb/10);
-		j +=ft_putnbrinsigned10(nb%10);
+		j +=ft_putnbrunsigned10(nb/10);
+		j +=ft_putnbrunsigned10(nb%10);
 	}
 	return (j);
 }

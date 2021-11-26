@@ -3,15 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printpointer.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmerzak <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 21:01:06 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/25 21:39:32 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/26 22:39:29 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf_h.h"
-
+#include "ft_printf.h"
+static int	ft_putnbhexp(unsigned long nb)
+{	
+	int j;
+	char *str;
+	j = 0;
+	
+	str = "0123456789abcdef";
+	if (nb < 16)
+	{
+		write(1,&str[nb],1);
+		j++;
+	}
+	else
+	{
+		j+=ft_putnbhexp(nb / 16);
+		j+=ft_putnbhexp(nb % 16);
+	}
+	return (j);
+}
 int	ft_printpointer(void *ptr)
 {
 	int	j;
@@ -19,10 +37,10 @@ int	ft_printpointer(void *ptr)
 	j = 0;
 	unsigned long	a;
 
-	a = (unsigned long )ptr;
+	a = (unsigned long)ptr;
 
 	write(1,"0x",2);
-	j = ft_putnbhex(a);
+	j = ft_putnbhexp(a);
 	j+=2;
 	return (j);
 }

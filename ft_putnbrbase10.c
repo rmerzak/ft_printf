@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbrbase10.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmerzak <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:55:57 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/25 21:40:24 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/26 21:18:15 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf_h.h"
+#include "ft_printf.h"
 
 int	ft_putnbrbase10(int i)
 {

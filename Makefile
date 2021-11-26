@@ -1,11 +1,23 @@
-NAME = ft_printf_h.a
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/11/26 20:47:02 by rmerzak           #+#    #+#              #
+#    Updated: 2021/11/26 21:43:03 by rmerzak          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = libftprintf.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-INCLUDE = ft_printf_h.h 
+INCLUDE = ft_printf.h 
 
 SOURCES = ft_putchar.c ft_putnbhex.c ft_putnbhX.c ft_putnbrbase10.c\
-	  ft_putnbrunsigned10.c ft_putstr.c ft_printpointer.c ft_printpourcentage.c\
+	  ft_putnbrunsigned10.c ft_putstr.c ft_printpointer.c ft_printpourcentage.c ft_printf.c\
 
 OBJET = $(SOURCES:%.c=%.o)
 
@@ -20,7 +32,8 @@ $(NAME) : $(OBJET)
 clean:
 	rm -f $(OBJET)
 
-fclean:
+fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+

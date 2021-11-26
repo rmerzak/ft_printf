@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmerzak <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:44:09 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/25 21:39:49 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/26 21:18:04 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf_h.h"
+#include "ft_printf.h"
 
 int	ft_putchar(char c)
 {
