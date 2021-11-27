@@ -6,14 +6,13 @@
 /*   By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:44:09 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/26 21:18:04 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/27 18:34:30 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "ft_printf.h"
 
 int	ft_putchar(char c)
 {
-	write(1,&c,1);
+	write(1, &c, 1);
 	return (1);
 }

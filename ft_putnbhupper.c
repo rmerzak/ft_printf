@@ -1,41 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbrbase10.c                                  :+:      :+:    :+:   */
+/*   ft_putnbhupper.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/24 15:55:57 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/27 18:42:00 by rmerzak          ###   ########.fr       */
+/*   Created: 2021/11/27 18:39:34 by rmerzak           #+#    #+#             */
+/*   Updated: 2021/11/27 19:12:02 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putnbrbase10(int i)
+void	ft_putnbhupper(unsigned int i, int *j)
 {
-	char	c;
-	long	nb;
-	int		j;
+	char	*str;
 
-	j = 0;
-	nb = i;
-	if (nb < 0)
+	str = "0123456789ABCDEF";
+	if (i < 16)
 	{
-		write(1, "-", 1);
-		nb = nb * -1;
-		j++;
-	}
-	if (nb >= 0 && nb <= 9)
-	{
-		c = nb + '0';
-		write(1, &c, 1);
-		j++;
+		write(1, &str[i], 1);
+		*j += 1;
 	}
 	else
 	{
-		j += ft_putnbrbase10(nb / 10);
-		j += ft_putnbrbase10(nb % 10);
+		ft_putnbhupper(i / 16, j);
+		ft_putnbhupper(i % 16, j);
 	}
-	return (j);
 }

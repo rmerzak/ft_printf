@@ -6,7 +6,7 @@
 /*   By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 16:10:33 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/26 21:18:20 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/27 18:42:45 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_putnbrunsigned10(unsigned int i)
 {
-	int j;
+	int		j;
 	long	nb;
-	char				c;
+	char	c;
 
 	nb = i;
 	j = 0;
@@ -32,8 +32,8 @@ int	ft_putnbrunsigned10(unsigned int i)
 	}
 	else
 	{
-		j +=ft_putnbrunsigned10(nb/10);
-		j +=ft_putnbrunsigned10(nb%10);
+		j += ft_putnbrunsigned10(nb / 10);
+		j += ft_putnbrunsigned10(nb % 10);
 	}
 	return (j);
 }

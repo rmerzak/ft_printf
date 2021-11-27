@@ -6,13 +6,13 @@
 /*   By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:45:58 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/26 21:44:28 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/27 18:43:35 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putstr(const char *str)
+int	ft_putstr(const char *str)
 {
 	size_t	i;
 

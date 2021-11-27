@@ -6,10 +6,9 @@
 /*   By: rmerzak <rmerzak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:14:12 by rmerzak           #+#    #+#             */
-/*   Updated: 2021/11/26 21:17:59 by rmerzak          ###   ########.fr       */
+/*   Updated: 2021/11/27 18:33:51 by rmerzak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "ft_printf.h"
 
 int	ft_printpourcentage(void)
