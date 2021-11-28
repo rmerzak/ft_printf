@@ -24,9 +24,9 @@ OBJET = $(SOURCES:%.c=%.o)
 all : $(NAME)
 
 $(NAME) : $(OBJET)
-	ar -rcs $(NAME) $(OBJET) $(INCLUDE)
+	ar -rcs $(NAME) $(OBJET) 
 
-%.o : %.c
+%.o : %.c $(INCLUDE)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
